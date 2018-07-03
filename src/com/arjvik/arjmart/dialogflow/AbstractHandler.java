@@ -32,8 +32,7 @@ public abstract class AbstractHandler implements IntentFulfillmentHandler {
 	}
 	
 	protected String getResponseTemplate(String name) {
-		//return responseTemplates.getProperty(name);
-		return (responseTemplates = getResponseTemplates()).getProperty(name);
+		return responseTemplates.getProperty(name);
 	}
 
 	protected int convertToInt(Object o) {
